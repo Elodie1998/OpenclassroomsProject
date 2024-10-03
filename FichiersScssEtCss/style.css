@@ -75,7 +75,11 @@ h1 {
 
 @media (max-width: 767px) {
   button {
-    background: linear-gradient(to right, #9356DC, #FF79DA);
+    /* Rectangle 5 */
+    /* Button Gradient */
+    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    /* Shadow/Button */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     padding: 0 18px;
     box-shadow: 0px 0px 35px rgb(0, 0, 0);
