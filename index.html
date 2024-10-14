@@ -11,124 +11,120 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./FichiersScssEtCss/style.css">
+        <link rel="stylesheet" href="./styles/style.css">
     </head>
 
 <body>
     <header>
         <img class="header__img" src="./Images/Logo.png" alt="logo OhMyFood">
-        <div class="header__p header__shadow">
+        <div class="header__p header__p--box">
             <i class="fa-solid fa-location-dot"></i>
             <p>Paris, Belleville</p>
         </div>
     </header>
     <main class="main-container">
-        <section class="background-color">
-        <h1>Réservez le menu qui vous convient</h1>
-        <p class="p__h1--styles">Découvrez des restaurants d'exeption, sélectionnés par nos soins</p>
-        <button>
-            <a href="#Restaurants">
-                <p>Explorer nos restaurants</p>
-            </a>
-        </button>
+        <section class="presentation">
+            <h1>Réservez le menu qui vous convient</h1>
+            <p class="presentation__p--styles">Découvrez des restaurants d'exeption, sélectionnés par nos soins</p>
+            <button class="btn">
+                <a href="#restaurants">
+                    <p>Explorer nos restaurants</p>
+                </a>
+            </button>
         </section>
         <section>
-            <h2 class="title__left fonctionment">Fonctionnement</h2>
+            <h2 class="titleH2--styles">Fonctionnement</h2>
                 <ol>
-                    <li class="li__line">
-                        <p class="background__round">1</p>
+                    <li class="li__content">
+                        <p class="li__content--circle">1</p>
                         <i class="fa-solid fa-mobile-screen-button"></i>
-                        <p class="li__p--weight">Choississez un restaurant</p>
+                        <p class="li__content--styles">Choississez un restaurant</p>
                     </li>
-                    <li class="li__line">
-                        <p class="background__round">2</p>
+                    <li class="li__content">
+                        <p class="li__content--circle">2</p>
                         <i class="fa-solid fa-list-ul"></i>
-                        <p class="li__p--weight">Composez votre menu</p>
+                        <p class="li__content--styles">Composez votre menu</p>
                     </li>
-                    <li class="li__line">
-                        <p class="background__round">3</p>
+                    <li class="li__content">
+                        <p class="li__content--circle">3</p>
                         <i class="fa-solid fa-store"></i>
-                        <p class="li__p--weight">Dégustez au restaurant</p>
+                        <p class="li__content--styles">Dégustez au restaurant</p>
                     </li>
                 </ol>
         </section>
-        <section id="Restaurants">
-            <h2 class="title__left">Restaurants</h2>
-            <a href="./Restaurants/MenuPalette.html">
-                <article class="Restaurants__shadow">
-                    <div class="card">
-                    <div class="image__container">
-                        <img class="restaurant__1--img" src="./Images/image1.png" alt="Image d'un plat ...">
-                        <div class="new__overlay">Nouveau</div>
+        <section id="restaurants">
+            <h2 class="titleH2--styles">Restaurants</h2>
+            <a href="./restaurants/menuPalette.html">
+                <article class="restaurantCard">
+                    <div class="restaurantCard__top">
+                        <img class="restaurantCard__image" src="./images/image1.png" alt="Image d'un plat ...">
+                        <div class="restaurantCard__tag">Nouveau</div>
                     </div>
-                    <div class="cards__content">
-                        <div class="cards__text">
-                            <h3 class="cards__content--styles Restaurants__h3--weight">La palette du goût</h3>
-                            <p class="cards__content--styles Restaurants__p--weight">Ménilmontant</p>
-                        </div>
+                    <div class="restaurantCard__bottom">
+                        <h3 class="restaurantCards__bottom--styles restaurantCard__title">La palette du goût</h3>
+                        <p class="restaurantCards__bottom--styles restaurantCard__place">Ménilmontant</p>
                         <i class="fa-regular fa-heart"></i>
-                    </div>
                     </div>
                 </article>   
             </a>
-            <a href="./Restaurants/MenuEnchantée.html">
-                <article class="Restaurants__shadow">
-                    <div class="image__container">
-                        <img class="card__img" src="./Images/image2.png" alt="Image d'un plat de boulettes vu du dessus">
-                        <div class="new__overlay">Nouveau</div>
+            <a href="./restaurants/menuEnchantee.html">
+                <article class="restaurantCard">
+                    <div class="restaurantCard__top">
+                        <img class="restaurantCard__image" src="./images/image2.png" alt="Image d'un plat de boulettes vu du dessus">
+                        <div class="restaurantCard__tag">Nouveau</div>
                     </div>
-                    <div class="Restaurants__text--styles">
-                        <h3 class="cards__content--styles Restaurants__h3--weight">La note enchantée</h3>
-                        <p class="cards__content--styles Restaurants__p--weight">Charonne</p>
+                    <div class="restaurantCard__bottom">
+                        <h3 class="restaurantCards__bottom--styles restaurantCard__title">La note enchantée</h3>
+                        <p class="restaurantCards__bottom--styles restaurantCard__place">Charonne</p>
                         <i class="fa-regular fa-heart"></i>
                     </div>
                 </article>
             </a>
-            <a href="./Restaurants/MenuFrançaise.html">
-                <article class="Restaurants__shadow">
-                    <div class="image__container">
-                        <img class="card__img" src="./Images/image3.png" alt="">
-                        <div class="new__overlay">Nouveau</div>
+            <a href="./restaurants/menuFrancaise.html">
+                <article class="restaurantCard">
+                    <div class="restaurantCard__top">
+                        <img class="restaurantCard__image" src="./Images/image3.png" alt="">
+                        <div class="restaurantCard__tag">Nouveau</div>
                     </div>
-                    <div class="Restaurants__text--styles">
-                        <h3 class="cards__content--styles Restaurants__h3--weight">À la française</h3>
-                        <p class="cards__content--styles Restaurants__p--weight">Cité rouge</p>
+                    <div class="restaurantCard__bottom">
+                        <h3 class="restaurantCards__bottom--styles restaurantCard__title">À la française</h3>
+                        <p class="restaurantCards__bottom--styles restaurantCard__place">Cité rouge</p>
                         <i class="fa-regular fa-heart"></i>
                     </div>
                 </article>
             </a>
-            <a href="./Restaurants/MenuSens.html">
-                <article class="Restaurants__shadow">
-                    <div class="image__container">
-                        <img class="card__img" src="./Images/image4.png" alt="">
-                        <div class="new__overlay">Nouveau</div>
+            <a href="./restaurants/MenuSens.html">
+                <article class="restaurantCard">
+                    <div class="restaurantCard__top">
+                        <img class="restaurantCard__image" src="./images/image4.png" alt="">
+                        <div class="restaurantCard__tag">Nouveau</div>
                     </div>
-                    <div class="Restaurants__text--styles">
-                        <h3 class="cards__content--styles Restaurants__h3--weight">Le délice des sens</h3>
-                        <p class="cards__content--styles Restaurants__p--weight">Folie-Méricourt</p>
+                    <div class="restaurantCard__bottom">
+                        <h3 class="restaurantCards__bottom--styles restaurantCard__title">Le délice des sens</h3>
+                        <p class="restaurantCards__bottom--styles restaurantCard__place">Folie-Méricourt</p>
                         <i class="fa-regular fa-heart"></i>
                     </div>
                 </article>
             </a>
         </section>
     </main>
-    <footer>
-        <img src="./Images/LogoBlanc.png" alt="logo blanc OhMyFood">
+    <footer class="foot">
+        <p class="footer__logo">ohmyfood</p>
         <div>
-            <a href="#">
+            <a class="foot__link" href="#">
                 <i class="fa-solid fa-utensils"></i>
                 Proposer un restaurant
             </a>
         </div>
         <div>
-            <a href="#">
+            <a class="foot__link" href="#">
                 <i class="fa-solid fa-handshake-angle"></i>
                 Devenir partenaire
             </a>
         </div>
-        <div class="foot-column">
-            <a href="#">Mentions légales</a>
-            <a href="#">Contact</a>
+        <div class="foot__link--column">
+            <a class="foot__link" href="#">Mentions légales</a>
+            <a class="foot__link" href="#">Contact</a>
         </div>
     </footer>
 </body>
