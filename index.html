@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <img class="header__img" src="./Images/Logo.png" alt="logo OhMyFood">
+        <p class="header__logo">ohmyfood</p>
         <div class="header__p header__p--box">
             <i class="fa-solid fa-location-dot"></i>
             <p>Paris, Belleville</p>
@@ -57,52 +57,59 @@
             <a href="./restaurants/menuPalette.html">
                 <article class="restaurantCard">
                     <div class="restaurantCard__top">
-                        <img class="restaurantCard__image" src="./images/image1.png" alt="Image d'un plat ...">
+                        <img class="restaurantCard__image" src="./images/image1.png" alt="Image d'un plat vu sur le côté sur une table pour 10 personnes avec des mains devant ce plat">
                         <div class="restaurantCard__tag">Nouveau</div>
                     </div>
                     <div class="restaurantCard__bottom">
                         <h3 class="restaurantCards__bottom--styles restaurantCard__title">La palette du goût</h3>
                         <p class="restaurantCards__bottom--styles restaurantCard__place">Ménilmontant</p>
-                        <i class="fa-regular fa-heart"></i>
+                        <button  class="main__heart">
+                            <img class="main__heart--styles" src="./images/heart.png" alt="like">
+                        </button>
                     </div>
                 </article>   
             </a>
             <a href="./restaurants/menuEnchantee.html">
                 <article class="restaurantCard">
                     <div class="restaurantCard__top">
-                        <img class="restaurantCard__image" src="./images/image2.png" alt="Image d'un plat de boulettes vu du dessus">
+                        <img class="restaurantCard__image" src="./images/image2.png" alt="Image d'un plat de boulettes vu du dessus, une assiette vide et un verre rempli de champagne">
                         <div class="restaurantCard__tag">Nouveau</div>
                     </div>
                     <div class="restaurantCard__bottom">
                         <h3 class="restaurantCards__bottom--styles restaurantCard__title">La note enchantée</h3>
                         <p class="restaurantCards__bottom--styles restaurantCard__place">Charonne</p>
-                        <i class="fa-regular fa-heart"></i>
+                        <button class="main__heart">
+                            <img class="main__heart--styles" src="./images/heart.png" alt="like">
+                        </button>
                     </div>
                 </article>
             </a>
             <a href="./restaurants/menuFrancaise.html">
                 <article class="restaurantCard">
                     <div class="restaurantCard__top">
-                        <img class="restaurantCard__image" src="./Images/image3.png" alt="">
+                        <img class="restaurantCard__image" src="./Images/image3.png" alt="Image d'un plat avec une tasse et verre en fond">
                         <div class="restaurantCard__tag">Nouveau</div>
                     </div>
                     <div class="restaurantCard__bottom">
                         <h3 class="restaurantCards__bottom--styles restaurantCard__title">À la française</h3>
                         <p class="restaurantCards__bottom--styles restaurantCard__place">Cité rouge</p>
-                        <i class="fa-regular fa-heart"></i>
+                        <button class="main__heart">
+                            <img class="main__heart--styles" src="./images/heart.png" alt="like">
+                        </button>
                     </div>
                 </article>
             </a>
             <a href="./restaurants/MenuSens.html">
                 <article class="restaurantCard">
                     <div class="restaurantCard__top">
-                        <img class="restaurantCard__image" src="./images/image4.png" alt="">
+                        <img class="restaurantCard__image" src="./images/image4.png" alt="Image d'un plat dans une assiette rectangulaire vu de diagonal avec le même plat derrière sur une table en bois">
                         <div class="restaurantCard__tag">Nouveau</div>
                     </div>
                     <div class="restaurantCard__bottom">
                         <h3 class="restaurantCards__bottom--styles restaurantCard__title">Le délice des sens</h3>
                         <p class="restaurantCards__bottom--styles restaurantCard__place">Folie-Méricourt</p>
-                        <i class="fa-regular fa-heart"></i>
+                        <button class="main__heart">
+                        <img class="main__heart--styles" src="./images/heart.png" alt="like">
                     </div>
                 </article>
             </a>
@@ -110,14 +117,14 @@
     </main>
     <footer class="foot">
         <p class="footer__logo">ohmyfood</p>
-        <div>
-            <a class="foot__link" href="#">
+        <div class="foot__link">
+            <a href="#">
                 <i class="fa-solid fa-utensils"></i>
                 Proposer un restaurant
             </a>
         </div>
-        <div>
-            <a class="foot__link" href="#">
+        <div class="foot__link">
+            <a href="#">
                 <i class="fa-solid fa-handshake-angle"></i>
                 Devenir partenaire
             </a>

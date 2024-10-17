@@ -1,0 +1,90 @@
+//variables
+$main-color: #9356DC;
+$secondary-color:#FF79DA;
+$tertiary-color: #99E2D0;
+$footer-color:#353535;
+$background-color:#f6f6f6;
+$heart-color:#101010;
+$new-color: #008766;
+$logo-color: #FFFFFF;
+
+* {
+    font-family: Roboto;
+}
+
+.fa-arrow-left {
+    margin: 20px 0 20px 20px;
+}
+
+.header__elements {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menus__main {
+    padding-top: 300px;
+}
+
+.titleH1--styles {
+    font-family: Shrikhand;
+}
+
+.main__image {
+    width: 375px;
+    height: 275px;
+    position: absolute;
+    left: 0;
+}
+
+.title__icone--styles {
+    display: flex;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.menusH2--styles {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18.75px;
+    text-align: left;
+    border-bottom: 3px solid #99E2D0;
+    width: 40px;
+    padding-bottom: 5px;
+}
+
+.menusCard--styles {
+    box-shadow: 0px 4.01px 15.04px 0px #0000001A;
+    background-color: $logo-color;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.menusCard__h3--styles {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.menusCard__p--styles {
+    font-size: 15px;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menusCard__price--styles {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+
+.menusCard__content--styles {
+    line-height: 20px;
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.btn--styles {
+    margin-bottom: 40px;
+}
