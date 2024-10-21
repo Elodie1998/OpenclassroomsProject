@@ -17,7 +17,7 @@
 <body>
     <header>
         <p class="header__logo">ohmyfood</p>
-        <div class="header__p header__p--box">
+        <div class="header__p">
             <i class="fa-solid fa-location-dot"></i>
             <p>Paris, Belleville</p>
         </div>
@@ -25,7 +25,7 @@
     <main class="main-container">
         <section class="presentation">
             <h1>Réservez le menu qui vous convient</h1>
-            <p class="presentation__p--styles">Découvrez des restaurants d'exeption, sélectionnés par nos soins</p>
+            <p class="presentation__p">Découvrez des restaurants d'exeption, sélectionnés par nos soins</p>
             <button class="btn">
                 <a href="#restaurants">
                     <p>Explorer nos restaurants</p>
@@ -36,17 +36,17 @@
             <h2 class="titleH2--styles">Fonctionnement</h2>
                 <ol>
                     <li class="li__content">
-                        <p class="li__content--circle">1</p>
+                        <p class="li__content__circle">1</p>
                         <i class="fa-solid fa-mobile-screen-button"></i>
                         <p class="li__content--styles">Choississez un restaurant</p>
                     </li>
                     <li class="li__content">
-                        <p class="li__content--circle">2</p>
+                        <p class="li__content__circle">2</p>
                         <i class="fa-solid fa-list-ul"></i>
                         <p class="li__content--styles">Composez votre menu</p>
                     </li>
                     <li class="li__content">
-                        <p class="li__content--circle">3</p>
+                        <p class="li__content__circle">3</p>
                         <i class="fa-solid fa-store"></i>
                         <p class="li__content--styles">Dégustez au restaurant</p>
                     </li>
@@ -61,8 +61,8 @@
                         <div class="restaurantCard__tag">Nouveau</div>
                     </div>
                     <div class="restaurantCard__bottom">
-                        <h3 class="restaurantCards__bottom--styles restaurantCard__title">La palette du goût</h3>
-                        <p class="restaurantCards__bottom--styles restaurantCard__place">Ménilmontant</p>
+                        <h3 class="restaurantCard__bottom--styles restaurantCard__title">La palette du goût</h3>
+                        <p class="restaurantCard__bottom--styles restaurantCard__place">Ménilmontant</p>
                         <button  class="main__heart">
                             <img class="main__heart--styles" src="./images/heart.png" alt="like">
                         </button>
@@ -76,8 +76,8 @@
                         <div class="restaurantCard__tag">Nouveau</div>
                     </div>
                     <div class="restaurantCard__bottom">
-                        <h3 class="restaurantCards__bottom--styles restaurantCard__title">La note enchantée</h3>
-                        <p class="restaurantCards__bottom--styles restaurantCard__place">Charonne</p>
+                        <h3 class="restaurantCard__bottom--styles restaurantCard__title">La note enchantée</h3>
+                        <p class="restaurantCard__bottom--styles restaurantCard__place">Charonne</p>
                         <button class="main__heart">
                             <img class="main__heart--styles" src="./images/heart.png" alt="like">
                         </button>
@@ -91,8 +91,8 @@
                         <div class="restaurantCard__tag">Nouveau</div>
                     </div>
                     <div class="restaurantCard__bottom">
-                        <h3 class="restaurantCards__bottom--styles restaurantCard__title">À la française</h3>
-                        <p class="restaurantCards__bottom--styles restaurantCard__place">Cité rouge</p>
+                        <h3 class="restaurantCard__bottom--styles restaurantCard__title">À la française</h3>
+                        <p class="restaurantCard__bottom--styles restaurantCard__place">Cité rouge</p>
                         <button class="main__heart">
                             <img class="main__heart--styles" src="./images/heart.png" alt="like">
                         </button>
@@ -106,8 +106,8 @@
                         <div class="restaurantCard__tag">Nouveau</div>
                     </div>
                     <div class="restaurantCard__bottom">
-                        <h3 class="restaurantCards__bottom--styles restaurantCard__title">Le délice des sens</h3>
-                        <p class="restaurantCards__bottom--styles restaurantCard__place">Folie-Méricourt</p>
+                        <h3 class="restaurantCard__bottom--styles restaurantCard__title">Le délice des sens</h3>
+                        <p class="restaurantCard__bottom--styles restaurantCard__place">Folie-Méricourt</p>
                         <button class="main__heart">
                         <img class="main__heart--styles" src="./images/heart.png" alt="like">
                     </div>
@@ -115,23 +115,25 @@
             </a>
         </section>
     </main>
-    <footer class="foot">
-        <p class="footer__logo">ohmyfood</p>
-        <div class="foot__link">
-            <a href="#">
-                <i class="fa-solid fa-utensils"></i>
-                Proposer un restaurant
-            </a>
-        </div>
-        <div class="foot__link">
-            <a href="#">
-                <i class="fa-solid fa-handshake-angle"></i>
-                Devenir partenaire
-            </a>
-        </div>
-        <div class="foot__link--column">
-            <a class="foot__link" href="#">Mentions légales</a>
-            <a class="foot__link" href="#">Contact</a>
-        </div>
+    <footer class="footer">
+        <nav>
+            <p class="footer__logo">ohmyfood</p>
+            <div class="footer__link">
+                <a href="#">
+                    <i class="fa-solid fa-utensils"></i>
+                    Proposer un restaurant
+                </a>
+            </div>
+            <div class="footer__link">
+                <a href="#">
+                    <i class="fa-solid fa-handshake-angle"></i>
+                    Devenir partenaire
+                </a>
+            </div>
+            <div class="footer__link--column">
+                <a class="footer__link" href="#">Mentions légales</a>
+                <a class="footer__link" href="#">Contact</a>
+            </div>
+        </nav>
     </footer>
 </body>

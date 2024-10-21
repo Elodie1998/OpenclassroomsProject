@@ -1,0 +1,24 @@
+//variable
+$footer-color:#353535;
+
+//mixin
+@mixin flexAICenter {
+    display: flex;
+    align-items: center;
+}
+
+.header__p {
+    @include flexAICenter;
+    justify-content: center;
+    color: $footer-color;
+    line-height: 18.75px;
+    background-color: #eaeaea;
+    flex-direction: row;
+    margin-top: 15px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.fa-location-dot {
+    padding: 0 15px;
+    color: $footer-color;
+}
