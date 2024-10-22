@@ -1,12 +1,15 @@
+//variable
+$background-color:#f6f6f6;
 
 
 .main__heart {
     border: none;
+    background: $background-color;
+    margin-left: 10px;
 
     &--styles {
     width: 22px;
     height: 21px;
     text-align: end;
-    padding-right: 25px;
     }
 }

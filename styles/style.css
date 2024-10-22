@@ -31,17 +31,6 @@
   background-color: #f6f6f6;
 }
 
-h1 {
-  font-size: 28px;
-  display: flex;
-  justify-content: space-between;
-  font-weight: 700;
-  line-height: 28px;
-  width: 275px;
-  height: 68px;
-  margin: auto;
-}
-
 .footer {
   color: #FFFFFF;
   padding-bottom: 20px;
@@ -76,17 +65,30 @@ h1 {
 
 .main__heart {
   border: none;
+  background: #f6f6f6;
+  margin-left: 10px;
 }
 .main__heart--styles {
   width: 22px;
   height: 21px;
   text-align: end;
-  padding-right: 25px;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.h1Home {
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+  font-weight: 700;
+  line-height: 28px;
+  width: 275px;
+  height: 68px;
+  margin: auto;
 }
 
 .header__p {
@@ -106,6 +108,19 @@ a {
   color: #353535;
 }
 
+.olCenter {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 0 20px;
+  margin-bottom: 60px;
+}
+
+.fonctionment__section--backgrounColor {
+  background-color: white;
+  padding-top: 35px;
+  padding-bottom: 70px;
+}
+
 .fa-list-ul {
   color: #353535;
 }
@@ -121,7 +136,7 @@ a {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   border-radius: 20px;
   height: 72.38px;
-  margin-bottom: 25px;
+  margin-top: 25px;
 }
 .li__content--styles {
   line-height: 18.75px;
@@ -163,6 +178,7 @@ a {
   text-align: center;
   height: 46px;
   padding-left: 8px;
+  padding-top: 20px;
   margin: auto;
 }
 
@@ -212,6 +228,11 @@ a {
   margin: 0;
 }
 
+.restaurant__section--padding {
+  padding-top: 40px;
+  padding-bottom: 65px;
+}
+
 .fa-arrow-left {
   margin: 20px 0 20px 20px;
 }
@@ -221,8 +242,23 @@ a {
   justify-content: space-between;
 }
 
+.menus__main {
+  padding-top: 270px;
+}
+
+.main__image {
+  width: 375px;
+  height: 275px;
+  position: absolute;
+  left: 0;
+}
+
 .titleH1--styles {
   font-family: Shrikhand;
+  text-align: left;
+  font-size: 28px;
+  padding-right: 17.5px;
+  padding-top: 15px;
 }
 
 .menusH2--styles {
@@ -237,8 +273,9 @@ a {
 
 .title__icone--styles {
   display: flex;
-  margin-top: 30px;
-  text-align: left;
+  padding-left: 15px;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 .menusCard--styles {
@@ -272,6 +309,10 @@ a {
   text-align: left;
   padding-left: 15px;
   padding-top: 15px;
+}
+
+.menus__sections--paddingBottom {
+  padding-bottom: 40px;
 }
 
 * {

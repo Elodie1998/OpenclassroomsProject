@@ -1,9 +1,10 @@
 .main__heart {
   border: none;
+  background: #f6f6f6;
+  margin-left: 10px;
 }
 .main__heart--styles {
   width: 22px;
   height: 21px;
   text-align: end;
-  padding-right: 25px;
 }/*# sourceMappingURL=main-heart.css.map */
