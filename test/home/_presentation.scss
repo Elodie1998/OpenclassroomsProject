@@ -1,0 +1,30 @@
+$background-color:#f6f6f6;
+$footer-color:#353535;
+
+.presentation__section {
+    background-color: $background-color;
+    padding: 40px 0 57px 0;
+    margin: auto;
+
+    &__p {
+        color: $footer-color;
+        font-size: 18px;
+        font-weight: 300;
+        padding-left: 8px;
+        line-height: 25px;
+        width: 315px;
+        margin: auto;
+        padding-top: 10px;
+
+        @media (min-width: 767px) {
+            padding: 0;
+            width: auto;
+        }
+    }
+
+    &--backgroundColor {
+        @media (min-width:1024px) {
+            background-color: $background-color;
+        }
+    }
+}

@@ -1,11 +1,13 @@
 //variable
 $background-color:#f6f6f6;
+$main-heart-backgroundColor: white;
 
 
 .main__heart {
     border: none;
-    background: $background-color;
+    background: $main-heart-backgroundColor;
     margin-left: 10px;
+    padding: 30px 20px 20px 20px;
 
     &--styles {
     width: 22px;

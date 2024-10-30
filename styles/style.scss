@@ -1,27 +1,29 @@
 //use
-@use "../test/global/btn.scss";
-@use "../test/global/headerLogo.scss";
-@use "../test/global/main-container.scss";
-@use "../test/global/footer.scss";
-@use "../test/global/main-heart.scss";
-@use "../test/global/aLinks.scss";
-@use "../test/home/h1.scss";
-@use "../test/home/hearder-p.scss";
-@use "../test/home/olCenter.scss";
-@use "../test/home/fonctionnement.scss";
-@use "../test/home/h2Home.scss";
-@use "../test/home/presentation.scss";
-@use "../test/home/restaurantCard.scss";
-@use "../test/home/restaurantSection-padding.scss";
-@use "../test/menus/header-arrow.scss";
-@use "../test/menus/menus-main.scss";
-@use "../test/menus/menus-radius.scss";
-@use "../test/menus/menus-titleH1.scss";
-@use "../test/menus/menus-titleH2.scss";
-@use "../test/menus/menus-titleIcones.scss";
-@use "../test/menus/menusCard.scss";
-@use "../test/menus/menusSections-paddingBottom.scss";
+@use "../test/global/aLinks";
+@use "../test/global/btn";
+@use "../test/global/footer";
+@use "../test/global/headerLogo";
+@use "../test/global/main-container";
+@use "../test/global/main-heart";
+@use "../test/global/titles";
+
+@use "../test/home/fonctionnement";
+@use "../test/home/hearder-p";
+@use "../test/home/presentation";
+@use "../test/home/restaurantCard";
+@use "../test/home/restaurantSection-padding";
+
+@use "../test/menus/header-arrow";
+@use "../test/menus/menus-main";
+@use "../test/menus/menus-radius";
+@use "../test/menus/menusCard";
+@use "../test/menus/menusSections-paddingBottom";
 
 * {
     font-family: "Roboto";
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
 }

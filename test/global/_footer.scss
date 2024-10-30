@@ -1,0 +1,77 @@
+$footer-color:#353535;
+$logo-color: #FFFFFF;
+
+@mixin lineHeightFSizeFWeight {
+    line-height: 18.75px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@mixin footerLogo {
+        font-family: Shrikhand;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 26.24px;
+        width: 137.58px;
+        height: 27px;
+        padding-top: 20px;
+        margin: 0;
+}
+
+.footer {
+    color: $logo-color;
+    padding-bottom: 20px;
+    background-color: $footer-color;
+    padding-left: 25px;
+
+    &__link {
+        @include lineHeightFSizeFWeight;
+        padding-bottom: 7px;
+    
+    &--column {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 1024px) {
+            flex-direction: row;
+            gap: 10px;
+        }
+    }
+  }
+
+    &--row {
+        @media (min-width: 1024px) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 7px;
+            justify-content: flex-end;
+            padding: 50px 50px 0 300px;
+        }
+    }
+}
+.footer__logo {
+        @include footerLogo;
+        text-align: left;
+        padding-bottom: 30px;
+
+
+        @media (min-width: 1024px) {
+           display: none;
+        }
+
+        &--right {
+            @media (max-width: 1023px) {
+            display: none;
+            }
+
+            @media (min-width: 1024px) {
+            @include footerLogo;
+            padding: 20px 0 52px 30px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
