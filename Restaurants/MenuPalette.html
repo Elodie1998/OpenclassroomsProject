@@ -5,11 +5,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>OhMyFood Menu La palette du goût</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" >
+        
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../styles/style.css"/>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"">
+
     </head>
 
 <body>
@@ -20,24 +22,32 @@
             </a>
             <p class="header__logo">ohmyfood</p>
         </div>
-        <img class="main__image" src="../images/image1.png" alt="Image d'un plat vu sur le côté sur une table pour 10 personnes avec des mains devant ce plat">
     </header>
+    <div class="menuImage">
+        <img class="main__image" src="../images/image1A.jpg" alt="Image d'un plat vu sur le côté sur une table pour 10 personnes avec des mains devant ce plat">
+    </div>
     <main class="main-container menus__main menus--radius">
         <div class="title__icone--styles">
             <h1 class="titleH1--styles">La palette du goût</h1>
             <button class="main__heart">
-                <img class="main__heart--styles" src="../images/heart.png" alt="like">
+                <i class="fa-regular fa-heart main__heart--style"></i>
+                <i class="fa-solid fa-heart main__heart--style coeurAnime"></i>
             </button>
         </div>
-        <section class="menus__sections--paddingBottom">
+        <section class="menus__sections--padding">
             <h2 class="menusH2--styles">ENTRÉES</h2>
                 <a href="#">
                     <article class="menusCard--styles">
-                        <div class="menusCard__content--styles">
-                            <h3 class="menusCard__h3--styles">Fricassée d'escargots</h3>
-                            <div class="menusCard__price--styles">
-                                <p class="menusCard__p--styles">Au piment d'Espelette</p>
-                                <p>25<span class="euro">€</span></p>
+                        <div class="menuCard__right">
+                            <div class="menusCard__content--styles">
+                                <h3 class="menusCard__h3--styles">Fricassée d'escargots</h3>
+                                <div class="menusCard__price--styles">
+                                    <p class="menusCard__p--styles">Au piment d'Espelette</p>
+                                    <p>25<span class="euro">€</span></p>
+                                </div>
+                            </div>
+                            <div class="menuCard__right--check">
+                                <i class="fas fa-circle-check"></i>
                             </div>
                         </div>
                     </article>
@@ -65,7 +75,7 @@
                     </article>
                 </a>
         </section>
-        <section class="menus__sections--paddingBottom">
+        <section class="menus__sections--padding">
             <h2 class="menusH2--styles">PLATS</h2>
                 <a href="#">
                     <article class="menusCard--styles">
@@ -101,7 +111,7 @@
                     </article>
                 </a>
         </section>
-        <section class="menus__sections--paddingBottom">
+        <section class="menus__sections--padding">
             <h2 class="menusH2--styles">DESSERTS</h2>
                 <a href="#">
                     <article class="menusCard--styles">
@@ -143,7 +153,7 @@
     </main>
         
     <footer class="footer">
-        <nav>
+        <nav class="footer--row">
             <p class="footer__logo">ohmyfood</p>
             <div class="footer__link">
                 <a href="#">
@@ -159,8 +169,9 @@
             </div>
             <div class="footer__link--column">
                 <a class="footer__link" href="#">Mentions légales</a>
-                <a class="footer__link" href="#">Contact</a>
+                <a class="footer__link" href="mailto:elog1998@gmail.com">Contact</a>
             </div>
+            <p class="footer__logo--right">ohmyfood</p>
         </nav>
     </footer>
 </body>

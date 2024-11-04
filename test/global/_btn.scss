@@ -1,14 +1,25 @@
-
+//variables
+$main-color: #9356DC;
+$lighten-main-color: lighten(#9356DC, 5%);
+$secondary-color: #FF79DA;
+$lighten-secondary-color:  lighten(#FF79DA, 5%);
 
 
 .btn {
-    background: linear-gradient(350deg, #9356DC -5.2%, #FF79DA 110.74%);
+    background: linear-gradient(350deg, $main-color -5.2%, $secondary-color 110.74%);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     padding: 0 18px;
     color: white;
     border: none;
     margin-top: 30px;
+    animation-name: btnHover;
+    animation-timing-function: ease-out;
+    animation-duration: 300ms;
+
+    &:hover {
+        background: linear-gradient(350deg, $lighten-main-color -5.2%, $lighten-secondary-color 110.74%);
+    }
 
     @media (min-width: 767px) {
         margin-top: 20px;

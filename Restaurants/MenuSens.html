@@ -5,11 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>OhMyFood Menu Le délice des sens</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" >
+        
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../styles/style.css"/>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     </head>
 
 <body>
@@ -20,16 +21,19 @@
             </a>
             <p class="header__logo">ohmyfood</p>
         </div>
-        <img class="main__image" src="../images/image4.png" alt="Image d'un plat dans une assiette rectangulaire vu de diagonal avec le même plat derrière sur une table en bois">
     </header>
+    <div class="menuImage">
+        <img class="main__image" src="../images/image4A.jpg" alt="Image d'un plat dans une assiette rectangulaire vu de diagonal avec le même plat derrière sur une table en bois">
+    </div>
     <main class="main-container menus__main menus--radius">
         <div class="title__icone--styles">
             <h1 class="titleH1--styles">Le délice des sens</h1>
             <button class="main__heart">
-                <img class="main__heart--styles" src="../images/heart.png" alt="like">
+                <i class="fa-regular fa-heart main__heart--style"></i>
+                <i class="fa-solid fa-heart main__heart--style coeurAnime"></i>
             </button>
         </div>
-        <section class="menus__sections--paddingBottom">
+        <section class="menus__sections--padding">
             <h2 class="menusH2--styles">ENTRÉES</h2>
                 <a href="">
                     <article class="menusCard--styles">
@@ -65,7 +69,7 @@
                     </article>
                 </a>
         </section>
-        <section class="menus__sections--paddingBottom">
+        <section class="menus__sections--padding">
             <h2 class="menusH2--styles">PLATS</h2>
                 <a href="">
                     <article class="menusCard--styles">
@@ -101,7 +105,7 @@
                     </article>
                 </a>
         </section>
-        <section class="menus__sections--paddingBottom">
+        <section class="menus__sections--padding">
             <h2 class="menusH2--styles">DESSERTS</h2>
                 <a href="">
                     <article class="menusCard--styles">
@@ -143,7 +147,7 @@
     </main>
     
     <footer class="footer">
-        <nav>
+        <nav class="footer--row">
             <p class="footer__logo">ohmyfood</p>
             <div class="footer__link">
                 <a href="#">
@@ -161,6 +165,7 @@
                 <a class="footer__link" href="#">Mentions légales</a>
                 <a class="footer__link" href="#">Contact</a>
             </div>
+            <p class="footer__logo--right">ohmyfood</p>
         </nav>
     </footer>
 </body>

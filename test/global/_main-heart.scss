@@ -1,17 +1,76 @@
 //variable
 $background-color:#f6f6f6;
 $main-heart-backgroundColor: white;
+$heart-color:#101010;
+$main-color: #9356DC;
+$secondary-color: #FF79DA;
 
 
 .main__heart {
     border: none;
-    background: $main-heart-backgroundColor;
-    margin-left: 10px;
-    padding: 30px 20px 20px 20px;
+    margin: 0 20px;
 
-    &--styles {
-    width: 22px;
-    height: 21px;
-    text-align: end;
+    &--style {
+        text-align: end;
     }
+}
+
+.coeurAnime {
+    font-weight: 500;
+    position: relative;
+    opacity: 0;
+    /*animation-name: heartAnimation;
+    animation-duration: 0ms;
+    animation-timing-function: ease-in-out;*/
+
+    /*transition-property: opacity, color;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;*/
+
+    &:hover,
+    &:active {
+        opacity: 1;
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-weight: 900;
+        color: transparent;
+        background-image: linear-gradient(193.33deg, $main-color -11.44%, $secondary-color 123.93%);
+    }
+
+    /*&:not(:hover):not(:active) {
+        opacity: 0;
+    }
+    font-weight: 500;
+    animation-name: heartAnimation;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes heartAnimation {
+    0% {
+      font-weight: medium;
+      opacity: 0.5;
+    }
+    50% {
+        font-weight: 700;
+        opacity: 0.75;
+    }
+    100% {
+      font-weight: bold;
+      opacity: 1;
+      color: transparent;
+      background-image: linear-gradient(193.33deg, $main-color -11.44%, $secondary-color 123.93%);
+    }
+  }*/
+}
+
+.fa-heart {
+    font-weight: 500;
+    font-size: 22px;
+    position: absolute;
+    transition-property: color, font-weight;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+    color: $heart-color;
 }

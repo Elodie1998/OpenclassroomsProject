@@ -1,13 +1,38 @@
+//mixin
+@mixin main__image {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+}
 
-
+.menuImage {
+    margin-bottom: -50px;
+    z-index: -1;
+    position: relative;
+}
 
 .menus__main {
-    padding-top: 270px;
+    padding-top: 30px;
+    margin: 0 10px;
+
+    @media (min-width:1024px) {
+        width: min(1000px, 100%);
+        margin: auto;
+    }
 }
 
 .main__image {
-    width: 375px;
-    height: 275px;
-    position: absolute;
-    left: 0;
+   @include main__image;
+
+    /*@media (min-width: 700px) {
+        display: none;
+    }*/
+
+    &__ordi {
+        @include main__image;
+
+        @media (max-width: 699.9px) {
+            display: none;
+        }
+    }
 }
