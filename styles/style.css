@@ -120,7 +120,7 @@ a {
 }
 @media (min-width: 1024px) {
   .main-container {
-    width: min(1500px, 100%);
+    width: min(2000px, 100%);
     margin-left: auto;
     margin-right: auto;
   }
@@ -315,6 +315,8 @@ a {
   color: white;
   font-weight: 500;
   padding-top: 12px;
+  position: relative;
+  left: -15px;
 }
 
 .fa-mobile-screen-button,
@@ -512,57 +514,80 @@ a {
 }
 
 .menusCard--styles {
-  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
+  display: grid;
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #FFFFFF;
   margin-bottom: 20px;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .menusCard__h3--styles {
   font-size: 20px;
   font-weight: 500;
   margin: 0;
+  text-align: left;
 }
 
 .menusCard__p--styles {
   font-size: 15px;
   font-weight: 300;
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
 }
 
 .menusCard__price--styles {
   display: flex;
   justify-content: space-between;
-  padding-right: 15px;
 }
 
 .menusCard__content--styles {
+  max-width: 100%;
   line-height: 20px;
-  text-align: left;
-  padding-left: 15px;
-  padding-top: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.15);
   background-color: #FFFFFF;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 50px 0;
+  align-items: end;
+  transition: all 0.5s ease-in-out;
+}
+.menusCard__content--styles .menuCard__left {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+.menusCard__content--styles .menuCard__right {
+  padding-bottom: 15px;
+}
+.menusCard__content--styles:hover {
+  grid-template-columns: minmax(0, 1fr) 50px 100px;
 }
 
-.menuCard__right {
-  display: none;
+.menuCard__right--check {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  border-radius: 0px 15px 15px 0px;
-}
-.menuCard__right:hover .fa-circle-check {
-  color: #FFFFFF;
+  justify-content: center;
+  overflow: hidden;
   background-color: #99E2D0;
-  margin: 25px 20px;
-  transform-origin: 0% 50%;
+  height: 100%;
+  border-radius: 0 15px 15px 0;
 }
-.menuCard__right .fa-circle-check {
+
+.fa-circle-check {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: center;
   font-size: 20px;
+  color: #FFFFFF;
+  margin: 25px 20px;
 }
 
 .menus__sections--padding {

@@ -10,58 +10,83 @@ $tertiary-color: #99E2D0;
 
 
 .menusCard--styles {
-    box-shadow: 0px 4.01px 15.04px 0px #0000001A;
+    display: grid;
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: $logo-color;
     margin-bottom: 20px;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 .menusCard__h3--styles {
     font-size: 20px;
     font-weight: 500;
     margin: 0;
+    text-align: left;
 }
 
 .menusCard__p--styles {
     font-size: 15px;
     font-weight: 300;
-   @include flexJCspaceBetween;
+    width: 100%;
+    margin-bottom: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left
 }
 
 .menusCard__price--styles {
     @include flexJCspaceBetween;
-    padding-right: 15px;
 }
 
 .menusCard__content--styles {
+    max-width: 100%;
     line-height: 20px;
-    text-align: left;
-    padding-left: 15px;
-    padding-top: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 2px rgba(0,0,0,0.15);
     background-color: $logo-color;
-}
+    display: grid;
+    grid-template-columns: minmax(0,1fr) 50px 0;
+    align-items: end;
 
-.menuCard__right {
-    display: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 0px 15px 15px 0px;
+    transition: all 0.5s ease-in-out;
 
+    .menuCard__left {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        width: 100%;
+    }
+
+    .menuCard__right {
+        padding-bottom: 15px;
+    }
 
     &:hover {
-        .fa-circle-check {
-            color: $logo-color;
-            background-color: $tertiary-color;
-            margin: 25px 20px;
-            transform-origin: 0% 50%;
-        }
+        grid-template-columns: minmax(0,1fr) 50px 100px;
+    }
+}
+
+.menuCard__right--check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: $tertiary-color;
+    height: 100%;
+    border-radius: 0 15px 15px 0;
     }
 
 .fa-circle-check {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     justify-content: center;
     font-size: 20px;
+    color: $logo-color;
+    margin: 25px 20px;
     }
-}
