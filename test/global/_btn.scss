@@ -13,9 +13,6 @@ $lighten-secondary-color:  lighten(#FF79DA, 5%);
     color: white;
     border: none;
     margin-top: 30px;
-    animation-name: btnHover;
-    animation-timing-function: ease-out;
-    animation-duration: 300ms;
 
     &:hover {
         background: linear-gradient(350deg, $lighten-main-color -5.2%, $lighten-secondary-color 110.74%);

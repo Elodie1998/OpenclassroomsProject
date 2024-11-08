@@ -3,7 +3,7 @@ $loader-size: 100%;
 $main-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
-$loader-color: black;
+$loader-color: rgba(0,0,0,0.8);
 
 //mixins
 @mixin flexAICenter {
@@ -16,7 +16,7 @@ $loader-color: black;
     width: $loader-size;
     @include flexAICenter;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     background-color: $loader-color;
     animation-name: loader;
@@ -24,12 +24,18 @@ $loader-color: black;
     animation-delay: 0s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
+    pointer-events: none
 }
 
 .letter {
     color: $main-color;
-    font-size: 100px;
-    letter-spacing: 30px;
+    font-size: 40px;
+    letter-spacing: 10px;
+
+    @media (min-width: 767px) {
+        font-size: 80px;
+        letter-spacing: 20px;
+    }
 }
 
 @keyframes loader {
