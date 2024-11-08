@@ -1,0 +1,48 @@
+//variables
+$loader-size: 100%;
+$main-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$loader-color: black;
+
+//mixins
+@mixin flexAICenter {
+    display: flex;
+    align-items: center;
+}
+
+.loader {
+    height: $loader-size;
+    width: $loader-size;
+    @include flexAICenter;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    background-color: $loader-color;
+}
+
+.letter {
+    color: $main-color;
+    font-size: 100px;
+    letter-spacing: 30px;
+    animation-name: loader;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+}
+
+@keyframes loader {
+    0% {
+        color: $main-color;
+        text-shadow: 0 0 10px $main-color;
+    }
+    90% {
+        color: $secondary-color;
+        text-shadow: none;
+    }
+    100% {
+        color: $main-color;
+        text-shadow: 0 0 10px $main-color;
+        opacity: 0;
+    }
+}

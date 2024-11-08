@@ -1,5 +1,6 @@
 //variable
 $footer-color:#353535;
+$form-color: #eaeaea;
 
 //mixin
 @mixin flexAICenter {
@@ -7,15 +8,22 @@ $footer-color:#353535;
     align-items: center;
 }
 
-.header__p {
+input {
+    background-color: $form-color;
+    border: none;
+    appearance: none;
+}
+
+.header__text {
     @include flexAICenter;
     justify-content: center;
     color: $footer-color;
     line-height: 18.75px;
-    background-color: #eaeaea;
     flex-direction: row;
     margin-top: 15px;
+    background-color: $form-color;
     box-shadow: 0px 4px 4px 0px #00000040;
+    height: 50px;
 }
 
 .fa-location-dot {

@@ -20,6 +20,33 @@ $tertiary-color: #99E2D0;
     border-radius: 15px;
 }
 
+#section__article1 {
+    animation: delai 1s ease-in-out;
+}
+
+#section__article2 {
+    animation: delai 2s ease-in-out;
+}
+
+#section__article3 {
+    animation: delai 3s ease-in-out;
+}
+
+#section__article4 {                    //pour l'entrée supplémentaire au menu enchantee//
+    animation: delai 4s ease-in-out;
+}
+
+@keyframes delai {
+    0% {
+        opacity: 0;
+        transform: translateY(33%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .menusCard__h3--styles {
     font-size: 20px;
     font-weight: 500;
