@@ -367,16 +367,17 @@ input {
   position: absolute;
   z-index: 1;
   background-color: black;
+  animation-name: loader;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
 
 .letter {
   color: #9356DC;
   font-size: 100px;
   letter-spacing: 30px;
-  animation-name: loader;
-  animation-duration: 3s;
-  animation-delay: 0s;
-  animation-timing-function: linear;
 }
 
 @keyframes loader {
