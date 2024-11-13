@@ -3,7 +3,8 @@ $loader-size: 100%;
 $main-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
-$loader-color: rgba(0,0,0,0.8);
+$loader-color: rgba(137, 200, 250, 1);
+
 
 //mixins
 @mixin flexAICenter {
@@ -21,16 +22,15 @@ $loader-color: rgba(0,0,0,0.8);
     background-color: $loader-color;
     animation-name: loader;
     animation-duration: 3s;
-    animation-delay: 0s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     pointer-events: none
 }
 
 .letter {
-    color: $main-color;
     font-size: 40px;
     letter-spacing: 10px;
+    border-bottom: 4px solid $tertiary-color;
 
     @media (min-width: 767px) {
         font-size: 80px;
@@ -43,12 +43,17 @@ $loader-color: rgba(0,0,0,0.8);
         color: $main-color;
         text-shadow: 0 0 10px $main-color;
     }
-    90% {
+    35% {
         color: $secondary-color;
+    }
+
+    50% {
+        color: $tertiary-color;
         text-shadow: none;
     }
+
     100% {
-        color: $main-color;
+        color: $tertiary-color;
         text-shadow: 0 0 10px $main-color;
         opacity: 0;
     }

@@ -363,19 +363,18 @@ input {
   justify-content: center;
   position: fixed;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(137, 200, 250);
   animation-name: loader;
   animation-duration: 3s;
-  animation-delay: 0s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   pointer-events: none;
 }
 
 .letter {
-  color: #9356DC;
   font-size: 40px;
   letter-spacing: 10px;
+  border-bottom: 4px solid #99E2D0;
 }
 @media (min-width: 767px) {
   .letter {
@@ -389,12 +388,15 @@ input {
     color: #9356DC;
     text-shadow: 0 0 10px #9356DC;
   }
-  90% {
+  35% {
     color: #FF79DA;
+  }
+  50% {
+    color: #99E2D0;
     text-shadow: none;
   }
   100% {
-    color: #9356DC;
+    color: #99E2D0;
     text-shadow: 0 0 10px #9356DC;
     opacity: 0;
   }
