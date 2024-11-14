@@ -18,12 +18,16 @@ $loader-color: rgba(137, 200, 250, 1);
     @include flexAICenter;
     justify-content: center;
     position: fixed;
-    z-index: 1;
+    top: 0;
+    left: 0;
+    z-index: 2;
     background-color: $loader-color;
+    color: $main-color;
     animation-name: loader;
-    animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-duration: 1.5s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
     pointer-events: none
 }
 
@@ -31,6 +35,7 @@ $loader-color: rgba(137, 200, 250, 1);
     font-size: 40px;
     letter-spacing: 10px;
     border-bottom: 4px solid $tertiary-color;
+    background-color: $loader-color;
 
     @media (min-width: 767px) {
         font-size: 80px;

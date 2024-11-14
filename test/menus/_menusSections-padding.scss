@@ -2,5 +2,9 @@
 
 
 .menus__sections--padding {
-    padding: 20px;
+    padding: 40px 15px;
+
+    @media (min-width: 767px) {
+      padding: 20px 200px;
+    }
   }
