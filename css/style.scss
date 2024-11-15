@@ -1,0 +1,30 @@
+//use
+@use "../sass/global/aLinks";
+@use "../sass/global/btn";
+@use "../sass/global/footer";
+@use "../sass/global/headerLogo";
+@use "../sass/global/main-container";
+@use "../sass/global/main-heart";
+@use "../sass/global/titles";
+
+@use "../sass/home/fonctionnement";
+@use "../sass/home/hearder-text";
+@use "../sass/home/loader";
+@use "../sass/home/presentation";
+@use "../sass/home/restaurantCard";
+@use "../sass/home/restaurantSection-padding";
+
+@use "../sass/menus/header-arrow";
+@use "../sass/menus/menus-main";
+@use "../sass/menus/menus-radius";
+@use "../sass/menus/menusCard";
+@use "../sass/menus/menusSections-padding";
+
+* {
+    font-family: "Roboto";
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
