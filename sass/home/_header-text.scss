@@ -1,12 +1,6 @@
-//variable
-$footer-color:#353535;
-$form-color: #eaeaea;
 
-//mixin
-@mixin flexAICenter {
-    display: flex;
-    align-items: center;
-}
+@import "../utils/variables";
+@import "../utils/mixins";
 
 input {
     background-color: $form-color;

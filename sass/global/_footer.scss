@@ -1,23 +1,5 @@
-$footer-color:#353535;
-$logo-color: #FFFFFF;
-
-@mixin lineHeightFSizeFWeight {
-    line-height: 18.75px;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-@mixin footerLogo {
-        font-family: Shrikhand;
-        font-size: 18px;
-        font-style: italic;
-        font-weight: 400;
-        line-height: 26.24px;
-        width: 137.58px;
-        height: 27px;
-        padding-top: 20px;
-        margin: 0;
-}
+@import "../utils/variables";
+@import "../utils/mixins";
 
 .footer {
     color: $logo-color;

@@ -1,13 +1,6 @@
-//variables
-$tertiary-color: #99E2D0;
-$tag-color: #008766;
-$logo-color: #FFFFFF;
 
-//mixin
-@mixin flexAICenter {
-    display: flex;
-    align-items: center;
-}
+@import "../utils/variables";
+@import "../utils/mixins";
 
 .restaurantCard {
     box-shadow: 0px 4px 15px 0px #0000001A;

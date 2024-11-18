@@ -1,12 +1,6 @@
-//variable
-$logo-color: #FFFFFF;
-$tertiary-color: #99E2D0;
 
-//mixin
-@mixin flexJCspaceBetween {
-    display: flex;
-    justify-content: space-between;
-}
+@import "../utils/variables";
+@import "../utils/mixins";
 
 
 .menusCard--styles {

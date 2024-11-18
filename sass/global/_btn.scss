@@ -1,8 +1,5 @@
 //variables
-$main-color: #9356DC;
-$lighten-main-color: lighten(#9356DC, 5%);
-$secondary-color: #FF79DA;
-$lighten-secondary-color:  lighten(#FF79DA, 5%);
+@import "../utils/variables";
 
 
 .btn {

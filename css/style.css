@@ -248,6 +248,7 @@ a {
   grid-template-rows: 1fr 1fr 1fr;
   padding: 0;
   margin-bottom: 60px;
+  margin-left: 15px;
 }
 @media (min-width: 767px) {
   .olCenter {
@@ -525,9 +526,6 @@ input {
   height: 275px;
   -o-object-fit: cover;
      object-fit: cover;
-  /*@media (min-width: 700px) {
-      display: none;
-  }*/
 }
 .main__image__ordi {
   width: 100%;

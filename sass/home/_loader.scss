@@ -1,16 +1,6 @@
-//variables
-$loader-size: 100%;
-$main-color: #9356DC;
-$secondary-color: #FF79DA;
-$tertiary-color: #99E2D0;
-$loader-color: rgba(137, 200, 250, 1);
 
-
-//mixins
-@mixin flexAICenter {
-    display: flex;
-    align-items: center;
-}
+@import "../utils/variables";
+@import "../utils/mixins";
 
 .loader {
     height: $loader-size;
